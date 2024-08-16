@@ -1,0 +1,89 @@
+/* Estilos generales del cuerpo */
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif; /* Mejora de la tipografía general */
+  color: #ffffff; /* Color de texto general */
+}
+
+/* Contenedor principal del juego */
+#game {
+  max-width: 500px;
+  max-height: 600px; /* Mayor altura para acomodar mejor el contenido */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Fondo semi-transparente para el contenedor */
+  color: #0a0a23;
+  margin: 30px auto;
+  padding: 20px; /* Espaciado interno más amplio */
+  border-radius: 10px; /* Bordes más redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos de texto */
+#text {
+  background-color: #0a0a23;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Espaciado inferior para separar del resto */
+}
+
+/* Contenedores de estadísticas y controles */
+#stats,
+#controls {
+  border: 1px solid #0a0a23;
+  padding: 10px;
+  color: #0a0a23;
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Espaciado inferior para separar de otros elementos */
+}
+
+/* Estilo de botones */
+button {
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 3px solid #feac32;
+  border-radius: 5px;
+  padding: 10px 15px; /* Tamaño del padding mejorado */
+  margin: 5px; /* Espaciado entre botones */
+  font-size: 16px; /* Tamaño de fuente más grande para mejor legibilidad */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+button:hover {
+  background-color: #ffac33;
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+button:active {
+  background-color: #feac32;
+  transform: scale(0.95); /* Efecto de escala al hacer clic */
+}
+
+/* Estilos de estadísticas de monstruos */
+#monsterStats {
+  display: none;
+  border: 1px solid #0a0a23;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #c70d0d;
+  border-radius: 5px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  #game {
+    max-width: 100%;
+  }
+}
